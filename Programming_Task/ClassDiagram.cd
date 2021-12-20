@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="program creates an instance of UserQuries">
+    <Position X="7.117" Y="1.583" Height="0.542" Width="1.3" />
+  </Comment>
+  <Comment CommentText="UserQuries Creates an Instance of Read &amp; Write SQL">
+    <Position X="4.167" Y="2.35" Height="0.542" Width="1.3" />
+  </Comment>
+  <Comment CommentText="My Logic in Creating an instance of read and write object in userQueries is that they should be created just before the user selects a query to insert and get the info from the sql.">
+    <Position X="7.07" Y="2.35" Height="1.553" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Reads the csv path from App Config">
+    <Position X="4.567" Y="4.095" Height="0.75" Width="0.958" />
+  </Comment>
+  <Class Name="Programming_Task.Program">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="UserQueries" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Programming_Task.ReadFromSql">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ReadFromSql.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programming_Task.WriteCsvToSql">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WriteCsvToSql.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programming_Task.SqlHandlerBase" Collapsed="true">
+    <Position X="1.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAEAAAAAAAAAAAAAAAABAAIAAAAAAAA=</HashCode>
+      <FileName>SqlHandlerBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Programming_Task.UserQueries">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <AssociationLine Name="SqlHandlerBase" Type="Programming_Task.SqlHandlerBase" FixedFromPoint="true">
+      <Path>
+        <Point X="5.5" Y="2.312" />
+        <Point X="3" Y="2.312" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAQAAAAAQAAA=</HashCode>
+      <FileName>UserQueries.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SqlHandlerBase" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
